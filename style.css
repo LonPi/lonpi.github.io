@@ -46,7 +46,7 @@ section {
     text-align: center;
 }
 
-section .content-block {
+.content-block {
     margin-top: 5%;
     margin-right: 15%;
     margin-left: 15%;
@@ -90,8 +90,8 @@ footer p {
 }
 
 #graphic img{
-    width: 400px;
-    height: 250px;
+    width: 100%;
+    height: 100%;
     background-position: center;
     background-size: cover;
 }
@@ -104,6 +104,12 @@ footer p {
     opacity: 1;
 }
 
+#graphic .column {
+    width: 250px;
+    height: 250px;
+    margin-left: 5px;
+    margin-top: 40px;
+}
 
 @media screen and (max-width: 600px) {
     p {
