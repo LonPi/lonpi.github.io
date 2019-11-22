@@ -1,0 +1,90 @@
+*
+{
+/*    box-sizing: border-box;*/
+    margin: 0;
+    padding: 0;
+}
+
+html, body, #fullheight {
+/*    min-height: 100%;*/
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #292E38;
+    color: floralwhite;
+    font-family: monospace;
+    font-family: "Courier", sans-serif;
+}
+
+h1 {
+    /*    text-transform: uppercase;*/
+    font-family: "Lato";
+    font-size: 50px;
+    text-align: center;
+    margin-top: 275px;
+}
+h2 {
+    text-align: left;
+    margin-left: 10%;
+}
+
+p{
+    font-family: "Calibri";
+    font-size: 20px;
+}
+
+section {
+    display: block;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    min-height: 800px;
+    text-align: center;
+}
+
+section .content-block {
+    margin-top: 5%;
+    margin-right: 15%;
+    margin-left: 15%;
+    text-align: left;
+}
+
+nav {
+    overflow: hidden;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+/*    padding: 15px;*/
+    z-index: 5;
+    opacity: .95;
+}
+
+.modal-title {
+    color: black;
+    text-align: center;
+}
+
+.fullpic {
+    background: 
+        linear-gradient(
+            to bottom, 
+            rgba(0, 0, 0, 0), 
+            rgba(0, 0, 50, 0.4)
+        ),
+        url(images/snowyard.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@media screen and (max-width: 600px) {
+    p {
+        font-size: 15px;
+    }
+}

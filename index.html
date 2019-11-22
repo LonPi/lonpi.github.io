@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>le Bioweb</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+
+    <!--  Main Navigation Bar  -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">BioWeb</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#graphic">Graphics</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="jumbotron fullpic">
+        <div class="container text-center">
+            <h1>Alex Eng</h1>
+            <p>Welcome To le BioWeb</p>
+        </div>
+    </div>
+    
+    <!--  About Section  -->
+    <section id="about" class="container-fluid">
+        <div>
+            <h2>About Me</h2>
+            <div class="content-block">
+                <p>Hello!! ♥
+                <br>I'm Zhang Liek ( Alex ) Eng, a Malaysian currently based in Toronto. 
+                <br>Done my B.Sc in Computer Science at the University of Guelph in April 2019.</p>
+                
+                <p>The aspects I've most enjoyed from programming is emphathizing with users on their obstacles and experiences. With them in mind, I seek practical solutions via programming, visuals, psychology, and other expertise available. 
+                <br>I mainly work with  Python, with side experiences in C, Java, PostgreSQL. For the frontend, it would be HTML, CSS, and Javascript while utilizing Bootstrap for responsive web development. I also made some web and android games through Unity and C# for project Blue Kuma Games.</p>
+                
+                <p>Aside programming, you may find me mostly drawing, cooking, gaming, and occasionally gymming. You may find some art samples under the Graphics section.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!--  Projects Section  -->
+    <section id="project" class="container-fluid">
+        <div>
+            <h2>Projects</h2>
+            <div class="content-block row">
+                <div class="col-sm-4">
+                    <img class="featurette-image img-responsive conter-block" src="images/bg_main1.jpg" alt="Placeholder Image"/>
+                </div>
+                <div class="col-sm-8">
+                    <h3>Okonomiyaki</h3>
+                    <p>oh dang that looks good</p>
+                </div>
+            </div>
+            <div class="content-block row">
+                <div class="col-sm-4">
+                    <img class="featurette-image img-responsive conter-block" src="images/bg_main1.jpg" alt="Placeholder Image"/>
+                </div>
+                <div class="col-sm-8">
+                    <h3>Okonomiyaki</h3>
+                    <p>oh dang that looks good</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--  Graphics Section  -->
+    <section id="graphic" class="container-fluid">
+        <div>
+            <h2>Graphics</h2>
+            <p>LonPi</p>
+            <div class="content-block">
+                <!-- Image Blocks -->
+                <div class="col-lg-3 col-sm-4 col-6">
+                    <a title="Pipo"><img src="images/pipo.jpg" class="thumbnail img-responsive"></a>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-6">
+                    <a title="Pikachu"><img src="images/wot.png" class="thumbnail img-responsive"></a>
+                </div>
+                <!--  Lightbox pop up  -->
+                <div id="myModal" class="modal fade" tabindex="-1" role="dialog" style="display: none;">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                                <h3 class="modal-title">Placeholder Title</h3>
+                            </div>
+                            <div class="modal-body"><a title="Placeholder Title">
+                                <img src="images/pipo.jpg" class="thumbnail img-responsive"></a>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-lg btn-primary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <!--  Contact Section  -->
+    <section id="contact" class="container-fluid">
+        <div>
+            <h2>Contact</h2>
+            <p>Resume Phone Email Github</p>
+        </div>
+    </section>
+    
+    <!--  jQuery  -->
+<!--
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+-->
+    <!--  Bootstrap Core JS  -->
+    <script src="js/bootstrap-lightbox.js"></script>
+    <script>
+        $('.thumbnail').click(function () {
+            $('.modal-body').empty();
+            var title = $(this).parent('a').attr("title");
+            $('.modal-title').html(title);
+            $($(this).parents('div').html()).appendTo('.modal-body');
+            $('#myModal').modal({
+                show: true
+            });
+        });
+    </script>
+    <!--  FOOTER  -->
+
+</body>
+
+</html>
