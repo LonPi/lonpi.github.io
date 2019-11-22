@@ -104,11 +104,6 @@ footer p {
     opacity: 1;
 }
 
-#contact img {
-    width: 140px;
-    height: 140px;
-}
-
 
 @media screen and (max-width: 600px) {
     p {
