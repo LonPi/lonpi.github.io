@@ -1,5 +1,5 @@
 # bioweb
 personal website
 ---
-format test
-```code snip snip```
+Access via:
+```https://lonpi.github.io/```
