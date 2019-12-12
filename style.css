@@ -1,12 +1,11 @@
-*
-{
-/*    box-sizing: border-box;*/
+* {
     margin: 0;
     padding: 0;
 }
 
-html, body, #fullheight {
-/*    min-height: 100%;*/
+html,
+body,
+#fullheight {
     height: 100%;
 }
 
@@ -22,12 +21,12 @@ body {
 }
 
 h1 {
-    /*    text-transform: uppercase;*/
     font-family: "Lato";
     font-size: 50px;
     text-align: center;
     margin-top: 275px;
 }
+
 h2 {
     text-align: left;
     margin-left: 10%;
@@ -57,7 +56,6 @@ nav {
     text-align: center;
     position: fixed;
     width: 100%;
-/*    padding: 15px;*/
     z-index: 5;
     opacity: .95;
 }
@@ -73,12 +71,21 @@ footer p {
 }
 
 .fullpic {
-    background: 
-        linear-gradient(
-            to bottom, 
-            rgba(0, 0, 0, 0), 
-            rgba(0, 0, 50, 0.6)
-        ),
+    background:
+        -webkit-gradient(linear,
+            left top, left bottom,
+            from(rgba(0, 0, 0, 0)),
+            to(rgba(0, 0, 50, 0.6))),
+        url(images/snowyard.jpg);
+    background:
+        -o-linear-gradient(top,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 50, 0.6)),
+        url(images/snowyard.jpg);
+    background:
+        linear-gradient(to bottom,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 50, 0.6)),
         url(images/snowyard.jpg);
     height: 100%;
     background-position: center;
@@ -89,12 +96,13 @@ footer p {
     text-align: left;
 }
 
-#graphic img{
+#graphic img {
     width: 100%;
     height: 100%;
     background-position: center;
     background-size: cover;
 }
+
 #graphic img {
     opacity: 0.8;
     cursor: pointer;
@@ -113,6 +121,6 @@ footer p {
 
 @media screen and (max-width: 600px) {
     p {
-        font-size: 15px;
+        font-size: 12px;
     }
 }
