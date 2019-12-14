@@ -6,13 +6,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100088736-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-100088736-2');
+
+    </script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="./script.js"></script>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    
+
 </head>
 
 <body>
@@ -40,37 +54,37 @@
             </div>
         </div>
     </nav>
-    
+
     <div class="jumbotron fullpic">
         <div class="container text-center">
             <h1>Alex Eng</h1>
             <p>Hello and Welcome!</p>
         </div>
     </div>
-    
+
     <!--  About Section  -->
     <section id="about" class="container-fluid">
         <div>
             <h2>About Me</h2>
             <div class="content-block">
-                <p><br>I'm Alex Eng, a Malaysian currently based in Toronto. 
-                <br>Received my B.Sc in Computer Science at the University of Guelph in May 2019.</p>
-                
-                <p>The aspects I've most enjoyed from programming is emphathizing with users on their obstacles and experiences. With them in mind, I seek practical solutions through programming, visuals, psychology, and other expertise. 
-                <br>I mainly work with  Python, with additional experiences in C, Java, PostgreSQL. For the frontend, it would be HTML, and CSS while utilizing Bootstrap for responsive web development. I also made some web and android games through Unity and C# for Blue Kuma Games.</p>
-                
+                <p><br>I'm Alex Eng, a Malaysian currently based in Toronto.
+                    <br>Received my B.Sc in Computer Science at the University of Guelph in May 2019.</p>
+
+                <p>The aspects I've most enjoyed from programming is emphathizing with users on their obstacles and experiences. With them in mind, I seek practical solutions through programming, visuals, psychology, and other expertise.
+                    <br>I mainly work with Python, with additional experiences in C, Java, PostgreSQL. For the frontend, it would be HTML, and CSS while utilizing Bootstrap for responsive web development. I also made some web and android games through Unity and C# for Blue Kuma Games.</p>
+
                 <p>Aside from programming, my hobbies are drawing, cooking, gaming, and physical fitness. You may find some art, food, and photography samples under the Graphics section.</p>
             </div>
         </div>
     </section>
-    
+
     <!--  Projects Section  -->
     <section id="project" class="container-fluid">
         <div>
             <h2>Projects</h2>
             <div class="content-block row">
                 <div class="col-sm-4">
-                    <img class="featurette-image img-responsive conter-block" src="images/bluekumaicon.jpg" alt="Cute blue bear game"/>
+                    <img class="featurette-image img-responsive conter-block" src="images/bluekumaicon.jpg" alt="Cute blue bear game" />
                 </div>
                 <div class="col-sm-8">
                     <h3>Blue Kuma Games</h3>
@@ -81,7 +95,7 @@
             </div>
             <div class="content-block row">
                 <div class="col-sm-4">
-                    <img class="featurette-image img-responsive conter-block" src="images/mangafox_mic.jpg" alt="Mangafox with mic icon"/>
+                    <img class="featurette-image img-responsive conter-block" src="images/mangafox_mic.jpg" alt="Mangafox with mic icon" />
                 </div>
                 <div class="col-sm-8">
                     <h3>Voice Control Reader</h3>
@@ -91,7 +105,7 @@
             </div>
         </div>
     </section>
-    
+
     <!--  Graphics Section  -->
     <section id="graphic" class="container-fluid">
         <div>
@@ -131,7 +145,7 @@
                                 <h3 class="modal-title">Placeholder Title</h3>
                             </div>
                             <div class="modal-body"><a title="Placeholder Title">
-                                <img src="images/pipo.jpg" class="thumbnail img-responsive"></a>
+                                    <img src="images/pipo.jpg" class="thumbnail img-responsive"></a>
                             </div>
                             <div class="modal-footer">
                                 <button class="btn btn-lg btn-primary" data-dismiss="modal">Close</button>
@@ -139,38 +153,38 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
-    
+
     <!--  Contact Section  -->
     <section id="contact" class="container-fluid">
         <div>
             <h2>Contact</h2>
             <div class="content-block row">
                 <div class="col-lg-4">
-                    <img class="rounded" src="images/resume.png" width="140px" height="140px"/>
+                    <img class="rounded" src="images/resume.png" width="140px" height="140px" />
                     <h3></h3>
                     <a href="resume.pdf" class="btn btn-lg btn-primary">View Resume</a>
                 </div>
                 <div class="col-lg-4">
-                    <img class="rounded" src="images/telephone.png" width="140px" height="140px"/>
+                    <img class="rounded" src="images/telephone.png" width="140px" height="140px" />
                     <h3>Contact Info</h3>
                     <p>Cell: (647)567-8233</p>
                     <p>Email: zhangliek@hotmail.com</p>
                 </div>
                 <div class="col-lg-4">
-                    <img class="rounded" src="images/github-logo.png" width="140px" height="140px"/>
+                    <img class="rounded" src="images/github-logo.png" width="140px" height="140px" />
                     <h3></h3>
                     <a href="https://github.com/lonpi" class="btn btn-lg btn-primary">GitHub</a>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <!--  jQuery  -->
-<!--
+    <!--
     <script>
         function myFunction() {
             var x = document.getElementById("myTopnav");
@@ -185,7 +199,7 @@
     <!--  Bootstrap Core JS  -->
     <script src="js/bootstrap-lightbox.js"></script>
     <script>
-        $('.thumbnail').click(function () {
+        $('.thumbnail').click(function() {
             $('.modal-body').empty();
             var title = $(this).parent('a').attr("title");
             $('.modal-title').html(title);
@@ -194,6 +208,7 @@
                 show: true
             });
         });
+
     </script>
     <!--  FOOTER  -->
     <footer>
